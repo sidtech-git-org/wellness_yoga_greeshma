@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Yoga Studio | Live Online Yoga Classes</title>
+  <meta name="description" content="Live online yoga classes for beginners and regular practitioners in Bengaluru, Karnataka and across India." />
+  <meta name="theme-color" content="#315c4b" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: '#315c4b',
+            sage: '#dce8df',
+            sand: '#f6f2ea',
+            clay: '#b56f53'
+          },
+          fontFamily: {
+            sans: ['DM Sans', 'sans-serif'],
+            display: ['Playfair Display', 'serif']
+          },
+          boxShadow: {
+            soft: '0 18px 50px rgba(35, 58, 48, .10)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { overflow-x: hidden; }
+    body { font-family: 'DM Sans', sans-serif; }
+    section { scroll-margin-top: 88px; }
+    .hero-orb {
+      background:
+        radial-gradient(circle at 25% 30%, rgba(255,255,255,.9), transparent 26%),
+        linear-gradient(145deg, #dce8df 0%, #f6f2ea 55%, #e8d9c8 100%);
+    }
+  </style>
+</head>
+<body class="bg-[#fbfaf7] text-zinc-900 antialiased">
+
+  <header class="sticky top-0 z-50 border-b border-zinc-200/70 bg-[#fbfaf7]/90 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+      <a href="#home" class="flex items-center gap-3">
+        <div class="grid h-10 w-10 place-items-center rounded-full bg-forest text-lg text-white">ॐ</div>
+        <div>
+          <p class="font-display text-xl font-bold leading-none text-forest">Your Yoga Studio</p>
+          <p class="mt-1 text-[11px] font-medium uppercase tracking-[.18em] text-zinc-500">Live • Online • Mindful</p>
+        </div>
+      </a>
+
+      <nav class="hidden items-center gap-7 text-sm font-semibold text-zinc-700 md:flex">
+        <a href="#home" class="hover:text-forest">Home</a>
+        <a href="#about" class="hover:text-forest">About Us</a>
+        <a href="#teacher" class="hover:text-forest">Teacher</a>
+        <a href="programmes.html" class="hover:text-forest">Programmes</a>
+        <a href="#blog" class="hover:text-forest">Blog</a>
+        <a href="#contact" class="hover:text-forest">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a href="#contact" class="hidden rounded-full bg-forest px-5 py-2.5 text-sm font-bold text-white transition hover:opacity-90 sm:inline-flex">Join a Class</a>
+        <button id="menuBtn" class="grid h-11 w-11 place-items-center rounded-full border border-zinc-200 bg-white md:hidden" aria-label="Open menu" aria-expanded="false">
+          <svg id="menuOpen" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg id="menuClose" class="hidden h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden border-t border-zinc-200 bg-[#fbfaf7] px-4 py-3 md:hidden">
+      <div class="mx-auto grid max-w-6xl gap-1 text-sm font-semibold text-zinc-700">
+        <a class="rounded-xl px-3 py-3 hover:bg-sage/60" href="#home">Home</a>
+        <a class="rounded-xl px-3 py-3 hover:bg-sage/60" href="#about">About Us</a>
+        <a class="rounded-xl px-3 py-3 hover:bg-sage/60" href="#teacher">Teacher</a>
+        <a class="rounded-xl px-3 py-3 hover:bg-sage/60" href="programmes.html">Programmes</a>
+        <a class="rounded-xl px-3 py-3 hover:bg-sage/60" href="#blog">Blog</a>
+        <a class="rounded-xl px-3 py-3 hover:bg-sage/60" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-orb">
+      <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:py-24 lg:grid-cols-[1.05fr_.95fr]">
+        <div>
+          <span class="inline-flex rounded-full border border-forest/15 bg-white/70 px-4 py-2 text-xs font-bold uppercase tracking-[.14em] text-forest">"Yoga is the journey of the self, through the self, to the self".</span>
+          <h1 class="mt-6 max-w-3xl font-display text-5xl font-bold leading-[1.05] tracking-tight text-[#203c31] sm:text-6xl">Move better. Breathe deeper. Feel more like yourself.</h1>
+          <p class="mt-6 max-w-xl text-base leading-8 text-zinc-600 sm:text-lg">Simple, guided yoga classes designed to help you build strength, flexibility and calm — from wherever you are.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="programmes.html" class="rounded-full bg-forest px-6 py-3.5 text-sm font-bold text-white shadow-soft transition hover:-translate-y-0.5">Explore Programmes</a>
+            <a href="#teacher" class="rounded-full border border-forest/20 bg-white/70 px-6 py-3.5 text-sm font-bold text-forest transition hover:bg-white">Meet Your Teacher</a>
+          </div>
+          <div class="mt-9 flex flex-wrap gap-x-7 gap-y-3 text-sm font-medium text-zinc-600">
+            <span>✓ Beginner friendly</span>
+            <span>✓ Live guidance</span>
+            <span>✓ Join from home</span>
+          </div>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-[500px]">
+          <div class="aspect-[4/5] overflow-hidden rounded-[2.25rem] bg-[#dbe6dc] shadow-soft">
+            <div class="flex h-full flex-col justify-end bg-[linear-gradient(180deg,rgba(49,92,75,.08),rgba(28,53,43,.62)),url('assets/teacher-placeholder.jpg')] bg-cover bg-center p-7 text-white">
+              <p class="text-sm font-bold uppercase tracking-[.15em] text-white/80">Your daily pause</p>
+              <p class="mt-2 max-w-xs font-display text-3xl font-bold">A calmer way to build a stronger body.</p>
+            </div>
+          </div>
+          <div class="absolute -bottom-5 -left-3 rounded-2xl bg-white p-4 shadow-soft sm:-left-7">
+            <p class="text-xs font-bold uppercase tracking-[.12em] text-zinc-400">Classes</p>
+            <p class="mt-1 font-display text-xl font-bold text-forest">Live & Online</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-[.18em] text-clay">About Yoga</p>
+            <h2 class="mt-4 font-display text-4xl font-bold tracking-tight text-[#203c31] sm:text-5xl">Yoga that fits real life.</h2>
+          </div>
+          <div class="grid gap-6 sm:grid-cols-2">
+            <div class="rounded-3xl border border-zinc-200 bg-white p-7 shadow-soft">
+              <div class="mb-5 grid h-11 w-11 place-items-center rounded-2xl bg-sage text-xl">☀</div>
+              <h3 class="text-lg font-bold">What is yoga?</h3>
+              <p class="mt-3 text-sm leading-7 text-zinc-600">A practice that brings movement, breath and awareness together to support both physical and mental wellbeing.</p>
+            </div>
+            <div class="rounded-3xl border border-zinc-200 bg-white p-7 shadow-soft">
+              <div class="mb-5 grid h-11 w-11 place-items-center rounded-2xl bg-[#efe3d7] text-xl">✦</div>
+              <h3 class="text-lg font-bold">Why practise?</h3>
+              <p class="mt-3 text-sm leading-7 text-zinc-600">To improve mobility, strength, balance, posture, focus and the ability to slow down when life feels busy.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 rounded-[2rem] bg-forest p-7 text-white sm:p-10">
+          <div class="grid gap-7 md:grid-cols-3">
+            <div><p class="text-sm font-bold text-white/70">01</p><h3 class="mt-2 text-xl font-bold">Beginners</h3><p class="mt-2 text-sm leading-6 text-white/75">Start gently with clear guidance and simple foundations.</p></div>
+            <div><p class="text-sm font-bold text-white/70">02</p><h3 class="mt-2 text-xl font-bold">Busy professionals</h3><p class="mt-2 text-sm leading-6 text-white/75">Build a consistent practice without adding travel to your day.</p></div>
+            <div><p class="text-sm font-bold text-white/70">03</p><h3 class="mt-2 text-xl font-bold">Regular practitioners</h3><p class="mt-2 text-sm leading-6 text-white/75">Develop strength, mobility and discipline with live feedback.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="teacher" class="bg-sand py-20 sm:py-24">
+      <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 lg:grid-cols-2">
+        <div class="overflow-hidden rounded-[2rem] bg-[#dce8df] shadow-soft">
+          <div class="aspect-[5/4] bg-[url('assets/teacher-placeholder.jpg')] bg-cover bg-center"></div>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-[.18em] text-clay">Your Teacher</p>
+          <h2 class="mt-4 font-display text-4xl font-bold tracking-tight text-[#203c31] sm:text-5xl">Meet [Teacher Name]</h2>
+          <p class="mt-5 text-base leading-8 text-zinc-600">Add a warm, concise introduction here: teaching experience, yoga training or certification, teaching philosophy and what students can expect from each session.</p>
+          <div class="mt-7 grid gap-4 sm:grid-cols-3">
+            <div class="rounded-2xl bg-white p-4"><p class="text-2xl font-bold text-forest">[X]+</p><p class="mt-1 text-xs font-semibold text-zinc-500">Years practising</p></div>
+            <div class="rounded-2xl bg-white p-4"><p class="text-2xl font-bold text-forest">[X]+</p><p class="mt-1 text-xs font-semibold text-zinc-500">Years teaching</p></div>
+            <div class="rounded-2xl bg-white p-4"><p class="text-2xl font-bold text-forest">Online</p><p class="mt-1 text-xs font-semibold text-zinc-500">Live sessions</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="programmes" class="py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+          <div class="max-w-2xl">
+            <p class="text-xs font-bold uppercase tracking-[.18em] text-clay">Programmes</p>
+            <h2 class="mt-4 font-display text-4xl font-bold text-[#203c31] sm:text-5xl">Choose a practice that works for you.</h2>
+          </div>
+          <a href="programmes.html" class="text-sm font-bold text-forest hover:underline">View all programmes →</a>
+        </div>
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <article class="rounded-3xl border border-zinc-200 bg-white p-7 shadow-soft"><p class="text-xs font-bold uppercase tracking-[.13em] text-clay">Start here</p><h3 class="mt-4 text-xl font-bold">Beginner Foundation</h3><p class="mt-3 text-sm leading-7 text-zinc-600">A gentle introduction to movement, breathing and basic postures.</p></article>
+          <article class="rounded-3xl border border-zinc-200 bg-white p-7 shadow-soft"><p class="text-xs font-bold uppercase tracking-[.13em] text-clay">Most flexible</p><h3 class="mt-4 text-xl font-bold">Live Group Yoga</h3><p class="mt-3 text-sm leading-7 text-zinc-600">Consistent live classes for strength, mobility and wellbeing.</p></article>
+          <article class="rounded-3xl border border-zinc-200 bg-white p-7 shadow-soft"><p class="text-xs font-bold uppercase tracking-[.13em] text-clay">Personalised</p><h3 class="mt-4 text-xl font-bold">1-to-1 Yoga</h3><p class="mt-3 text-sm leading-7 text-zinc-600">Individual guidance tailored to your pace, goals and schedule.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="stories" class="bg-[#203c31] py-20 text-white sm:py-24">
+      <div class="mx-auto max-w-6xl px-4">
+        <p class="text-xs font-bold uppercase tracking-[.18em] text-white/60">Client Stories</p>
+        <h2 class="mt-4 max-w-xl font-display text-4xl font-bold sm:text-5xl">Small changes, felt every day.</h2>
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <blockquote class="rounded-3xl bg-white/8 p-7 ring-1 ring-white/10"><p class="text-lg leading-8">“Add a short, genuine client story here once the teacher has testimonials.”</p><footer class="mt-5 text-sm font-semibold text-white/60">— Client name</footer></blockquote>
+          <blockquote class="rounded-3xl bg-white/8 p-7 ring-1 ring-white/10"><p class="text-lg leading-8">“Keep each testimonial to one or two lines so the section stays clean.”</p><footer class="mt-5 text-sm font-semibold text-white/60">— Client name</footer></blockquote>
+          <blockquote class="rounded-3xl bg-white/8 p-7 ring-1 ring-white/10"><p class="text-lg leading-8">“Focus on real outcomes: consistency, confidence, mobility or stress relief.”</p><footer class="mt-5 text-sm font-semibold text-white/60">— Client name</footer></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="max-w-2xl">
+          <p class="text-xs font-bold uppercase tracking-[.18em] text-clay">Blog</p>
+          <h2 class="mt-4 font-display text-4xl font-bold text-[#203c31] sm:text-5xl">Simple reads for a better practice.</h2>
+        </div>
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <article class="rounded-3xl border border-zinc-200 bg-white p-6"><p class="text-xs font-bold text-clay">BEGINNERS</p><h3 class="mt-3 text-lg font-bold">What to expect in your first online yoga class</h3><p class="mt-3 text-sm leading-6 text-zinc-600">A future blog post explaining setup, clothing and how to join comfortably.</p></article>
+          <article class="rounded-3xl border border-zinc-200 bg-white p-6"><p class="text-xs font-bold text-clay">WELLBEING</p><h3 class="mt-3 text-lg font-bold">Why consistency matters more than intensity</h3><p class="mt-3 text-sm leading-6 text-zinc-600">A simple educational article for students building a regular practice.</p></article>
+          <article class="rounded-3xl border border-zinc-200 bg-white p-6"><p class="text-xs font-bold text-clay">PRACTICE</p><h3 class="mt-3 text-lg font-bold">Creating a small yoga space at home</h3><p class="mt-3 text-sm leading-6 text-zinc-600">Practical guidance for students attending online classes from home.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-sand py-20 sm:py-24">
+      <div class="mx-auto grid max-w-6xl gap-10 px-4 lg:grid-cols-[.9fr_1.1fr]">
+        <div>
+          <p class="text-xs font-bold uppercase tracking-[.18em] text-clay">Contact</p>
+          <h2 class="mt-4 font-display text-4xl font-bold text-[#203c31] sm:text-5xl">Ready to begin?</h2>
+          <p class="mt-5 max-w-md text-base leading-8 text-zinc-600">Tell us what you’re looking for and we’ll help you find the right class.</p>
+          <div class="mt-8 space-y-3 text-sm text-zinc-700">
+            <p><strong>WhatsApp:</strong> +91 [client number]</p>
+            <p><strong>Email:</strong> hello@[domain].com</p>
+            <p><strong>Classes:</strong> Live online • Bengaluru • Across India</p>
+          </div>
+        </div>
+
+        <form id="enquiryForm" class="rounded-[2rem] bg-white p-7 shadow-soft sm:p-9">
+          <div class="grid gap-5 sm:grid-cols-2">
+            <label class="text-sm font-semibold">Name<input id="name" required class="mt-2 w-full rounded-2xl border border-zinc-200 px-4 py-3 outline-none focus:border-forest" placeholder="Your name"></label>
+            <label class="text-sm font-semibold">Phone<input id="phone" required class="mt-2 w-full rounded-2xl border border-zinc-200 px-4 py-3 outline-none focus:border-forest" placeholder="Your WhatsApp number"></label>
+          </div>
+          <label class="mt-5 block text-sm font-semibold">I’m interested in<select id="interest" class="mt-2 w-full rounded-2xl border border-zinc-200 bg-white px-4 py-3 outline-none focus:border-forest"><option>Beginner Foundation</option><option>Live Group Yoga</option><option>1-to-1 Yoga</option><option>Not sure yet</option></select></label>
+          <label class="mt-5 block text-sm font-semibold">Message<textarea id="message" rows="4" class="mt-2 w-full rounded-2xl border border-zinc-200 px-4 py-3 outline-none focus:border-forest" placeholder="Anything you'd like us to know?"></textarea></label>
+          <button class="mt-6 w-full rounded-full bg-forest px-6 py-3.5 text-sm font-bold text-white" type="submit">Send on WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#172b23] text-white">
+    <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-white/60 sm:flex-row sm:items-center sm:justify-between">
+      <p>© <span id="year"></span> Your Yoga Studio</p>
+      <p>Website by <a class="font-semibold text-white hover:underline" href="https://sidtech.in" target="_blank" rel="noreferrer">SidTech</a></p>
+    </div>
+  </footer>
+
+  <a href="#contact" class="fixed bottom-5 right-5 z-40 rounded-full bg-[#25D366] px-5 py-3 text-sm font-bold text-white shadow-soft">WhatsApp</a>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuOpen = document.getElementById('menuOpen');
+    const menuClose = document.getElementById('menuClose');
+
+    menuBtn?.addEventListener('click', () => {
+      const willOpen = mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      menuOpen.classList.toggle('hidden');
+      menuClose.classList.toggle('hidden');
+      menuBtn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+    });
+
+    mobileMenu?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuOpen.classList.remove('hidden');
+      menuClose.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    }));
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.getElementById('enquiryForm')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const interest = document.getElementById('interest').value;
+      const message = document.getElementById('message').value.trim();
+      const clientWhatsapp = '91XXXXXXXXXX'; // replace with client's WhatsApp number
+      const text = encodeURIComponent(`Hello, I am interested in your yoga classes.\n\nName: ${name}\nPhone: ${phone}\nProgramme: ${interest}\nMessage: ${message}`);
+      window.open(`https://wa.me/${clientWhatsapp}?text=${text}`, '_blank');
+    });
+  </script>
+</body>
+</html>
