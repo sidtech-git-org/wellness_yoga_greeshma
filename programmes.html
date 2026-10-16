@@ -1,108 +1,129 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Programmes | Your Yoga Studio</title>
-  <meta name="description" content="Explore live online yoga programmes for beginners, regular group practice and personal 1-to-1 sessions." />
-  <meta name="theme-color" content="#315c4b" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: { forest:'#315c4b', sage:'#dce8df', sand:'#f6f2ea', clay:'#b56f53' },
-          fontFamily: { sans:['DM Sans','sans-serif'], display:['Playfair Display','serif'] },
-          boxShadow: { soft:'0 18px 50px rgba(35,58,48,.10)' }
-        }
-      }
-    }
-  </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find Your Practice | [Studio Name]</title>
+    <meta name="description" content="Explore online yoga, meditation and mindful retreats.">
+    <meta name="theme-color" content="#213d32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { forest: '#244c3b', deep: '#18372b', mint: '#e2f0df', lime: '#d7ef8a', cream: '#faf9f4', clay: '#c37b5b', ink: '#18271f' }, fontFamily: { sans: ['DM Sans', 'sans-serif'], display: ['Manrope', 'sans-serif'], serif: ['Playfair Display', 'serif'] }, boxShadow: { lift: '0 18px 55px rgba(24,55,43,.12)' } } } };</script>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
-<body class="bg-[#fbfaf7] font-sans text-zinc-900 antialiased">
-  <header class="sticky top-0 z-50 border-b border-zinc-200/70 bg-[#fbfaf7]/90 backdrop-blur-xl">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-      <a href="index.html#home" class="flex items-center gap-3">
-        <div class="grid h-10 w-10 place-items-center rounded-full bg-forest text-lg text-white">ॐ</div>
-        <div><p class="font-display text-xl font-bold leading-none text-forest">Your Yoga Studio</p><p class="mt-1 text-[11px] font-medium uppercase tracking-[.18em] text-zinc-500">Live • Online • Mindful</p></div>
-      </a>
-      <nav class="hidden items-center gap-7 text-sm font-semibold text-zinc-700 md:flex">
-        <a href="index.html#home" class="hover:text-forest">Home</a><a href="index.html#about" class="hover:text-forest">About Us</a><a href="index.html#teacher" class="hover:text-forest">Teacher</a><a href="programmes.html" class="text-forest">Programmes</a><a href="index.html#blog" class="hover:text-forest">Blog</a><a href="index.html#contact" class="hover:text-forest">Contact</a>
-      </nav>
-      <a href="index.html#contact" class="rounded-full bg-forest px-5 py-2.5 text-sm font-bold text-white">Join a Class</a>
-    </div>
-  </header>
 
-  <main>
-    <section class="bg-sage/55">
-      <div class="mx-auto max-w-6xl px-4 py-20 text-center sm:py-24">
-        <p class="text-xs font-bold uppercase tracking-[.18em] text-clay">Programmes</p>
-        <h1 class="mx-auto mt-4 max-w-3xl font-display text-5xl font-bold tracking-tight text-[#203c31] sm:text-6xl">A simple path into a regular yoga practice.</h1>
-        <p class="mx-auto mt-6 max-w-2xl text-base leading-8 text-zinc-600">Choose a class format that matches your experience, goals and schedule. All sessions are live and online.</p>
-      </div>
-    </section>
-
-    <section class="py-20 sm:py-24">
-      <div class="mx-auto max-w-6xl px-4">
-        <div class="grid gap-7 lg:grid-cols-3">
-          <article class="flex flex-col rounded-[2rem] border border-zinc-200 bg-white p-7 shadow-soft">
-            <p class="text-xs font-bold uppercase tracking-[.14em] text-clay">For beginners</p>
-            <h2 class="mt-4 text-2xl font-bold">Beginner Foundation</h2>
-            <p class="mt-3 text-sm leading-7 text-zinc-600">Learn basic postures, breathing and movement patterns with a steady, confidence-building approach.</p>
-            <ul class="mt-6 space-y-3 text-sm text-zinc-700"><li>✓ Live guided sessions</li><li>✓ Beginner-friendly pace</li><li>✓ Technique and alignment basics</li><li>✓ Suitable for home practice</li></ul>
-            <div class="mt-7 rounded-2xl bg-sand p-4"><p class="text-xs font-bold uppercase tracking-[.12em] text-zinc-400">Suggested package</p><p class="mt-1 font-bold">8–12 live sessions / month</p><p class="mt-1 text-sm text-zinc-500">Price: to be confirmed</p></div>
-            <a href="index.html#contact" class="mt-7 rounded-full bg-forest px-5 py-3 text-center text-sm font-bold text-white">Enquire Now</a>
-          </article>
-
-          <article class="relative flex flex-col rounded-[2rem] bg-forest p-7 text-white shadow-soft">
-            <span class="absolute right-6 top-6 rounded-full bg-white/15 px-3 py-1 text-[11px] font-bold uppercase tracking-[.12em]">Popular</span>
-            <p class="text-xs font-bold uppercase tracking-[.14em] text-white/65">For regular practice</p>
-            <h2 class="mt-4 text-2xl font-bold">Live Group Yoga</h2>
-            <p class="mt-3 text-sm leading-7 text-white/75">A balanced programme combining mobility, strength, breathwork and relaxation for consistent weekly practice.</p>
-            <ul class="mt-6 space-y-3 text-sm text-white/85"><li>✓ Live instructor-led classes</li><li>✓ Fixed weekly schedule</li><li>✓ Progressive practice</li><li>✓ Group motivation</li></ul>
-            <div class="mt-7 rounded-2xl bg-white/10 p-4"><p class="text-xs font-bold uppercase tracking-[.12em] text-white/50">Suggested package</p><p class="mt-1 font-bold">12–20 live sessions / month</p><p class="mt-1 text-sm text-white/60">Price: to be confirmed</p></div>
-            <a href="index.html#contact" class="mt-7 rounded-full bg-white px-5 py-3 text-center text-sm font-bold text-forest">Enquire Now</a>
-          </article>
-
-          <article class="flex flex-col rounded-[2rem] border border-zinc-200 bg-white p-7 shadow-soft">
-            <p class="text-xs font-bold uppercase tracking-[.14em] text-clay">Personalised</p>
-            <h2 class="mt-4 text-2xl font-bold">1-to-1 Yoga</h2>
-            <p class="mt-3 text-sm leading-7 text-zinc-600">Private online sessions designed around your goals, experience and preferred class timing.</p>
-            <ul class="mt-6 space-y-3 text-sm text-zinc-700"><li>✓ Personal attention</li><li>✓ Flexible scheduling</li><li>✓ Custom progression</li><li>✓ Direct teacher feedback</li></ul>
-            <div class="mt-7 rounded-2xl bg-sand p-4"><p class="text-xs font-bold uppercase tracking-[.12em] text-zinc-400">Suggested package</p><p class="mt-1 font-bold">4–8 private sessions / month</p><p class="mt-1 text-sm text-zinc-500">Price: to be confirmed</p></div>
-            <a href="index.html#contact" class="mt-7 rounded-full bg-forest px-5 py-3 text-center text-sm font-bold text-white">Enquire Now</a>
-          </article>
+<body class="antialiased">
+    <header class="sticky top-0 z-50 border-b border-stone-200/70 bg-cream/95 backdrop-blur-xl">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8"><a href="index.html"
+                class="flex items-center gap-3"><span
+                    class="grid h-10 w-10 place-items-center rounded-2xl bg-forest font-serif text-xl text-white">ॐ</span><span><b
+                        class="block font-display text-lg text-deep">[Studio Name]</b><small
+                        class="text-[9px] font-bold uppercase tracking-[.2em] text-stone-500">Yoga • Mind •
+                        Everyday</small></span></a>
+            <nav class="hidden gap-7 text-xs font-bold md:flex"><a href="index.html#benefits">Why yoga</a><a
+                    href="programmes.html" class="text-forest">Programmes</a><a href="index.html#teacher">Your guide</a>
+            </nav><a href="index.html#contact"
+                class="rounded-full bg-forest px-5 py-3 text-xs font-bold text-white">Let's talk ↗</a>
         </div>
-      </div>
-    </section>
-
-    <section class="bg-sand py-20">
-      <div class="mx-auto grid max-w-6xl gap-7 px-4 md:grid-cols-2">
-        <div>
-          <p class="text-xs font-bold uppercase tracking-[.18em] text-clay">How it works</p>
-          <h2 class="mt-4 font-display text-4xl font-bold text-[#203c31]">Join in three simple steps.</h2>
+    </header>
+    <main>
+        <section class="bg-[#18372b] py-16 text-white sm:py-24">
+            <div class="mx-auto grid max-w-7xl gap-8 px-5 sm:px-8 md:grid-cols-[1fr_.7fr] md:items-end">
+                <div class="reveal">
+                    <p class="text-[10px] font-extrabold uppercase tracking-[.22em] text-lime">Find your practice</p>
+                    <h1 class="mt-5 font-display text-5xl font-extrabold leading-[1.02] tracking-tight sm:text-7xl">Make
+                        time<br>for <span class="text-lime">you.</span></h1>
+                </div>
+                <p class="reveal max-w-md text-sm leading-7 text-white/70">No pressure to know it all. Explore a
+                    practice, ask a question and we'll help you take the next step.</p>
+            </div>
+        </section>
+        <section class="py-14 sm:py-20">
+            <div class="mx-auto max-w-7xl space-y-5 px-5 sm:px-8">
+                <a id="yoga" href="index.html#contact"
+                    class="reveal group grid overflow-hidden rounded-[1.7rem] bg-[#e3efdf] md:grid-cols-2"><img
+                        class="h-64 w-full object-cover transition duration-700 group-hover:scale-[1.025] md:h-full md:min-h-[390px]"
+                        src="img/yoga-practice.jpg" alt="Yoga session">
+                    <div class="flex flex-col justify-center p-7 sm:p-12">
+                        <p class="text-[10px] font-extrabold uppercase tracking-[.22em] text-forest/65">01 / Move</p>
+                        <h2 class="mt-4 font-display text-3xl font-extrabold sm:text-4xl">Yoga for everyday</h2>
+                        <p class="mt-4 max-w-md text-sm leading-7 text-stone-600">A welcoming way to build movement into
+                            your day, with options for different experience levels.</p><span
+                            class="mt-7 inline-flex items-center gap-3 text-xs font-extrabold text-forest">Ask about
+                            classes <span class="text-lg transition group-hover:translate-x-1">→</span></span>
+                    </div>
+                </a>
+                <a id="meditation" href="index.html#contact"
+                    class="reveal group grid overflow-hidden rounded-[1.7rem] bg-[#f0e5d7] md:grid-cols-2">
+                    <div class="order-2 flex flex-col justify-center p-7 sm:p-12 md:order-1">
+                        <p class="text-[10px] font-extrabold uppercase tracking-[.22em] text-clay">02 / Pause</p>
+                        <h2 class="mt-4 font-display text-3xl font-extrabold sm:text-4xl">Meditation & breath</h2>
+                        <p class="mt-4 max-w-md text-sm leading-7 text-stone-600">Simple guided practices to pause,
+                            notice your breath and make room for stillness.</p><span
+                            class="mt-7 inline-flex items-center gap-3 text-xs font-extrabold text-forest">Ask about
+                            sessions <span class="text-lg transition group-hover:translate-x-1">→</span></span>
+                    </div><img
+                        class="order-1 h-64 w-full object-cover transition duration-700 group-hover:scale-[1.025] md:order-2 md:h-full md:min-h-[390px]"
+                        src="img/meditation.jpg" alt="Meditation">
+                </a>
+                <a id="retreats" href="index.html#contact"
+                    class="reveal group grid overflow-hidden rounded-[1.7rem] bg-forest text-white md:grid-cols-2"><img
+                        class="h-64 w-full object-cover transition duration-700 group-hover:scale-[1.025] md:h-full md:min-h-[390px]"
+                        src="img/retreat-sunrise.jpg" alt="Sunrise landscape">
+                    <div class="flex flex-col justify-center p-7 sm:p-12">
+                        <p class="text-[10px] font-extrabold uppercase tracking-[.22em] text-lime">03 / Reconnect</p>
+                        <h2 class="mt-4 font-display text-3xl font-extrabold sm:text-4xl">Mindful retreats</h2>
+                        <p class="mt-4 max-w-md text-sm leading-7 text-white/70">A dedicated pause for reflection and
+                            mindful practice. Ask us about upcoming online experiences.</p><span
+                            class="mt-7 inline-flex items-center gap-3 text-xs font-extrabold text-lime">Explore
+                            upcoming retreats <span class="text-lg transition group-hover:translate-x-1">→</span></span>
+                    </div>
+                </a>
+                <div class="reveal grid gap-4 border-t border-stone-200 pt-9 md:grid-cols-2">
+                    <div>
+                        <p class="text-[10px] font-extrabold uppercase tracking-[.2em] text-clay">Gentle practice</p>
+                        <h3 class="mt-2 font-display text-xl font-extrabold">Yoga for seniors</h3>
+                        <p class="mt-2 text-sm leading-6 text-stone-600">Ask about session suitability and available
+                            modifications.</p>
+                    </div>
+                    <div>
+                        <p class="text-[10px] font-extrabold uppercase tracking-[.2em] text-clay">Young minds</p>
+                        <h3 class="mt-2 font-display text-xl font-extrabold">Yoga for children</h3>
+                        <p class="mt-2 text-sm leading-6 text-stone-600">Ask about age groups, guardian requirements and
+                            instructor suitability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-lime py-12">
+            <div
+                class="mx-auto flex max-w-7xl flex-col gap-5 px-5 sm:px-8 md:flex-row md:items-center md:justify-between">
+                <div>
+                    <p class="text-[10px] font-extrabold uppercase tracking-[.2em] text-forest/65">No complicated
+                        sign-up</p>
+                    <h2 class="mt-2 font-display text-3xl font-extrabold">Curious about timings or fees?</h2>
+                    <p class="mt-2 text-sm text-forest/80">We'll share current options and help you choose.</p>
+                </div><a href="index.html#contact"
+                    class="rounded-full bg-forest px-6 py-4 text-center text-xs font-extrabold text-white">Ask us on
+                    WhatsApp ↗</a>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-deep px-5 py-7 text-white/60 sm:px-8">
+        <div class="mx-auto flex max-w-7xl flex-col gap-4 text-xs sm:flex-row sm:items-center sm:justify-between">
+            <p class="font-display text-lg font-extrabold text-white">[Studio Name]</p>
+            <p>© <span id="year"></span> [Studio Name]</p>
+            <p>Website by <a href="https://sidtech.in" target="_blank" rel="noopener noreferrer"
+                    class="font-bold text-white">SidTech</a></p>
         </div>
-        <div class="space-y-4">
-          <div class="rounded-2xl bg-white p-5"><strong>1. Choose your programme</strong><p class="mt-1 text-sm text-zinc-600">Select the class format that suits you.</p></div>
-          <div class="rounded-2xl bg-white p-5"><strong>2. Confirm your batch</strong><p class="mt-1 text-sm text-zinc-600">We share available class timings and joining details.</p></div>
-          <div class="rounded-2xl bg-white p-5"><strong>3. Join live online</strong><p class="mt-1 text-sm text-zinc-600">Roll out your mat and join the teacher from home.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-20 text-center sm:py-24">
-      <div class="mx-auto max-w-3xl px-4">
-        <h2 class="font-display text-4xl font-bold text-[#203c31] sm:text-5xl">Not sure which programme is right for you?</h2>
-        <p class="mt-5 text-zinc-600">Send a quick message and we’ll help you choose based on your experience and goals.</p>
-        <a href="index.html#contact" class="mt-7 inline-flex rounded-full bg-forest px-6 py-3.5 text-sm font-bold text-white">Talk to Us</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="bg-[#172b23] text-white"><div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-white/60 sm:flex-row sm:items-center sm:justify-between"><p>© <span id="year"></span> Your Yoga Studio</p><p>Website by <a class="font-semibold text-white hover:underline" href="https://sidtech.in" target="_blank" rel="noreferrer">SidTech</a></p></div></footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    </footer>
+    <script src="script.js" defer></script>
 </body>
+
 </html>

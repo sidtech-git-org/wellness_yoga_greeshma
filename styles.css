@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    overflow-x: hidden
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #faf9f4;
+    color: #18271f
+}
+
+h1,
+h2,
+h3,
+.display {
+    font-family: 'Manrope', sans-serif
+}
+
+section[id] {
+    scroll-margin-top: 85px
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity .7s ease, transform .7s cubic-bezier(.2, .7, .2, 1)
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0)
+}
+
+.delay-1 {
+    transition-delay: .12s
+}
+
+.delay-2 {
+    transition-delay: .22s
+}
+
+.delay-3 {
+    transition-delay: .32s
+}
+
+.hero-gradient {
+    background: radial-gradient(circle at 78% 23%, rgba(215, 239, 138, .3), transparent 24%), linear-gradient(135deg, #18372b 0%, #244c3b 55%, #43684e 100%)
+}
+
+.hero-art {
+    background: linear-gradient(180deg, rgba(24, 55, 43, 0) 45%, rgba(24, 55, 43, .35) 100%), url('img/img1.png') center/cover
+}
+
+.float {
+    animation: float 6s ease-in-out infinite
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-10px)
+    }
+}
+
+.marquee {
+    animation: marquee 30s linear infinite
+}
+
+@keyframes marquee {
+    to {
+        transform: translateX(-50%)
+    }
+}
+
+.pulse-dot {
+    animation: pulse 2s infinite
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(215, 239, 138, .45)
+    }
+
+    50% {
+        box-shadow: 0 0 0 9px rgba(215, 239, 138, 0)
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none
+    }
+}
+
+/* Programme page styles */
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #faf9f4;
+    color: #18271f
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Manrope', sans-serif
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .7s ease, transform .7s ease
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: none
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none
+    }
+}
