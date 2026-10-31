@@ -14,8 +14,49 @@
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>tailwind.config = { theme: { extend: { colors: { forest: '#244c3b', deep: '#18372b', mint: '#e2f0df', lime: '#d7ef8a', cream: '#faf9f4', clay: '#c37b5b', ink: '#18271f' }, fontFamily: { sans: ['DM Sans', 'sans-serif'], display: ['Manrope', 'sans-serif'], serif: ['Playfair Display', 'serif'] }, boxShadow: { lift: '0 18px 55px rgba(24,55,43,.12)' } } } };</script>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            box-sizing: border-box
+        }
 
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: #faf9f4;
+            color: #18271f
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Manrope', sans-serif
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity .7s ease, transform .7s ease
+        }
+
+        .reveal.show {
+            opacity: 1;
+            transform: none
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: .01ms !important;
+                transition-duration: .01ms !important
+            }
+
+            .reveal {
+                opacity: 1;
+                transform: none
+            }
+        }
+    </style>
 </head>
 
 <body class="antialiased">
@@ -44,12 +85,59 @@
                     practice, ask a question and we'll help you take the next step.</p>
             </div>
         </section>
+
+        <section class="py-16 sm:py-24">
+            <div class="mx-auto max-w-7xl px-5 sm:px-8">
+                <div class="mx-auto max-w-2xl text-center">
+                    <p class="text-[10px] font-extrabold uppercase tracking-[.22em] text-clay">Choose your journey</p>
+                    <h2 class="mt-4 font-display text-3xl font-extrabold tracking-tight text-deep sm:text-5xl">A practice that fits your life.</h2>
+                    <p class="mt-4 text-sm leading-7 text-stone-600">Start small or make space for a deeper routine. Every programme is guided online and designed to help you build consistency at your own pace.</p>
+                </div>
+                <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                    <article class="group flex flex-col rounded-[1.5rem] border border-stone-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lift">
+                        <div class="flex items-center justify-between"><span class="text-[10px] font-extrabold uppercase tracking-[.18em] text-clay">01 · Begin</span><span class="rounded-full bg-[#f5eee7] px-3 py-1 text-[10px] font-bold text-stone-600">7 days</span></div>
+                        <h3 class="mt-5 font-display text-2xl font-extrabold text-deep">Starter</h3>
+                        <p class="mt-2 min-h-[72px] text-sm leading-6 text-stone-600">A gentle introduction to yoga, movement and mindful breathing.</p>
+                        <div class="mt-5 border-t border-stone-100 pt-5"><p class="text-xs font-semibold text-stone-500">Programme fee</p><p class="mt-1 font-display text-3xl font-extrabold text-forest">₹[PRICE]</p></div>
+                        <ul class="mt-5 space-y-2 text-sm text-stone-600"><li>✓ Guided online sessions</li><li>✓ Beginner-friendly practice</li><li>✓ Build a simple daily habit</li></ul>
+                        <a href="index.html#contact" class="mt-7 inline-flex items-center justify-between rounded-full border border-forest/20 px-4 py-3 text-xs font-extrabold text-forest transition group-hover:bg-forest group-hover:text-white">Enquire about this plan <span>↗</span></a>
+                    </article>
+                    <article class="group flex flex-col rounded-[1.5rem] border border-stone-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lift">
+                        <div class="flex items-center justify-between"><span class="text-[10px] font-extrabold uppercase tracking-[.18em] text-clay">02 · Build</span><span class="rounded-full bg-[#f5eee7] px-3 py-1 text-[10px] font-bold text-stone-600">21 days</span></div>
+                        <h3 class="mt-5 font-display text-2xl font-extrabold text-deep">Consistency</h3>
+                        <p class="mt-2 min-h-[72px] text-sm leading-6 text-stone-600">Create a steady rhythm with guided practice and mindful pauses.</p>
+                        <div class="mt-5 border-t border-stone-100 pt-5"><p class="text-xs font-semibold text-stone-500">Programme fee</p><p class="mt-1 font-display text-3xl font-extrabold text-forest">₹[PRICE]</p></div>
+                        <ul class="mt-5 space-y-2 text-sm text-stone-600"><li>✓ Guided online sessions</li><li>✓ Yoga + breathwork</li><li>✓ Support your routine</li></ul>
+                        <a href="index.html#contact" class="mt-7 inline-flex items-center justify-between rounded-full border border-forest/20 px-4 py-3 text-xs font-extrabold text-forest transition group-hover:bg-forest group-hover:text-white">Enquire about this plan <span>↗</span></a>
+                    </article>
+                    <article class="group flex flex-col rounded-[1.5rem] border border-forest/20 bg-[#e8f0e4] p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lift">
+                        <div class="flex items-center justify-between"><span class="text-[10px] font-extrabold uppercase tracking-[.18em] text-forest">03 · Deepen</span><span class="rounded-full bg-white/80 px-3 py-1 text-[10px] font-bold text-forest">1 month</span></div>
+                        <h3 class="mt-5 font-display text-2xl font-extrabold text-deep">Monthly practice</h3>
+                        <p class="mt-2 min-h-[72px] text-sm leading-6 text-stone-600">Make movement and stillness a meaningful part of everyday life.</p>
+                        <div class="mt-5 border-t border-forest/10 pt-5"><p class="text-xs font-semibold text-stone-500">Programme fee</p><p class="mt-1 font-display text-3xl font-extrabold text-forest">₹[PRICE]</p></div>
+                        <ul class="mt-5 space-y-2 text-sm text-stone-600"><li>✓ Guided online sessions</li><li>✓ Progressive practice</li><li>✓ Space to grow at your pace</li></ul>
+                        <a href="index.html#contact" class="mt-7 inline-flex items-center justify-between rounded-full bg-forest px-4 py-3 text-xs font-extrabold text-white transition hover:bg-deep">Enquire about this plan <span>↗</span></a>
+                    </article>
+                    <article class="group flex flex-col rounded-[1.5rem] border border-stone-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lift">
+                        <div class="flex items-center justify-between"><span class="text-[10px] font-extrabold uppercase tracking-[.18em] text-clay">04 · Sustain</span><span class="rounded-full bg-[#f5eee7] px-3 py-1 text-[10px] font-bold text-stone-600">3 months</span></div>
+                        <h3 class="mt-5 font-display text-2xl font-extrabold text-deep">Long-term journey</h3>
+                        <p class="mt-2 min-h-[72px] text-sm leading-6 text-stone-600">Commit to a longer journey with room for lasting habits and progress.</p>
+                        <div class="mt-5 border-t border-stone-100 pt-5"><p class="text-xs font-semibold text-stone-500">Programme fee</p><p class="mt-1 font-display text-3xl font-extrabold text-forest">₹[PRICE]</p></div>
+                        <ul class="mt-5 space-y-2 text-sm text-stone-600"><li>✓ Guided online sessions</li><li>✓ Ongoing practice journey</li><li>✓ Build long-term consistency</li></ul>
+                        <a href="index.html#contact" class="mt-7 inline-flex items-center justify-between rounded-full border border-forest/20 px-4 py-3 text-xs font-extrabold text-forest transition group-hover:bg-forest group-hover:text-white">Enquire about this plan <span>↗</span></a>
+                    </article>
+                </div>
+                <p class="mt-6 text-center text-xs leading-5 text-stone-500">Online session details are shared with registered participants on their phone/WhatsApp after booking. Fees and batch timings are confirmed during enquiry.</p>
+            </div>
+        </section>
+
         <section class="py-14 sm:py-20">
             <div class="mx-auto max-w-7xl space-y-5 px-5 sm:px-8">
                 <a id="yoga" href="index.html#contact"
                     class="reveal group grid overflow-hidden rounded-[1.7rem] bg-[#e3efdf] md:grid-cols-2"><img
                         class="h-64 w-full object-cover transition duration-700 group-hover:scale-[1.025] md:h-full md:min-h-[390px]"
-                        src="img/yoga-practice.jpg" alt="Yoga session">
+                        src="img/img4.png"
+                        alt="Yoga session">
                     <div class="flex flex-col justify-center p-7 sm:p-12">
                         <p class="text-[10px] font-extrabold uppercase tracking-[.22em] text-forest/65">01 / Move</p>
                         <h2 class="mt-4 font-display text-3xl font-extrabold sm:text-4xl">Yoga for everyday</h2>
@@ -70,12 +158,14 @@
                             sessions <span class="text-lg transition group-hover:translate-x-1">→</span></span>
                     </div><img
                         class="order-1 h-64 w-full object-cover transition duration-700 group-hover:scale-[1.025] md:order-2 md:h-full md:min-h-[390px]"
-                        src="img/meditation.jpg" alt="Meditation">
+                        src="img/img3.png"
+                        alt="Meditation">
                 </a>
                 <a id="retreats" href="index.html#contact"
                     class="reveal group grid overflow-hidden rounded-[1.7rem] bg-forest text-white md:grid-cols-2"><img
                         class="h-64 w-full object-cover transition duration-700 group-hover:scale-[1.025] md:h-full md:min-h-[390px]"
-                        src="img/retreat-sunrise.jpg" alt="Sunrise landscape">
+                        src="img/img2.png"
+                        alt="Sunrise landscape">
                     <div class="flex flex-col justify-center p-7 sm:p-12">
                         <p class="text-[10px] font-extrabold uppercase tracking-[.22em] text-lime">03 / Reconnect</p>
                         <h2 class="mt-4 font-display text-3xl font-extrabold sm:text-4xl">Mindful retreats</h2>
@@ -123,7 +213,7 @@
                     class="font-bold text-white">SidTech</a></p>
         </div>
     </footer>
-    <script src="script.js" defer></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear(); const o = ('IntersectionObserver' in window) ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('show'); o.unobserve(e.target) } }), { threshold: .12 }) : null; document.querySelectorAll('.reveal').forEach(el => o ? o.observe(el) : el.classList.add('show'));</script>
 </body>
 
 </html>

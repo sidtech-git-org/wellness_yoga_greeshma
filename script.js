@@ -13,3 +13,23 @@ const CLIENT_WHATSAPP = '91XXXXXXXXXX'; // Replace with client number, digits on
 
 // Programmes page interactions
 document.getElementById('year').textContent = new Date().getFullYear(); const o = ('IntersectionObserver' in window) ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('show'); o.unobserve(e.target) } }), { threshold: .12 }) : null; document.querySelectorAll('.reveal').forEach(el => o ? o.observe(el) : el.classList.add('show'));
+
+// Automatically rotate the student-story slides; arrows allow manual navigation.
+        const reviewTrack = document.getElementById('reviewTrack');
+        const reviewSlides = Array.from(document.querySelectorAll('.review-slide'));
+        let reviewIndex = 0;
+        const showReview = (index) => {
+            if (!reviewTrack || !reviewSlides.length) return;
+            reviewIndex = (index + reviewSlides.length) % reviewSlides.length;
+            reviewTrack.style.transform = `translateX(-${reviewIndex * 100}%)`;
+        };
+        let reviewTimer;
+        const startReviewTimer = () => {
+            clearInterval(reviewTimer);
+            reviewTimer = setInterval(() => showReview(reviewIndex + 1), 6000);
+        };
+        document.getElementById('reviewPrev')?.addEventListener('click', () => { showReview(reviewIndex - 1); startReviewTimer(); });
+        document.getElementById('reviewNext')?.addEventListener('click', () => { showReview(reviewIndex + 1); startReviewTimer(); });
+        document.getElementById('stories')?.addEventListener('mouseenter', () => clearInterval(reviewTimer));
+        document.getElementById('stories')?.addEventListener('mouseleave', startReviewTimer);
+        if (reviewSlides.length > 1) startReviewTimer();
